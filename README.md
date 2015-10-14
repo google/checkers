@@ -500,7 +500,7 @@ built-in asserters in the `checkers.asserts` module.
 
 Assert | Example | Description
 -------|---------|------------
-`expect_exception` | `with asserts.expect_exception(ZeroDivisionError): 2 / 0` | asserts that the expected exception is raisedd
+`expect_exception` | `with asserts.expect_exception(ZeroDivisionError): 2 / 0` | asserts that the expected exception is raised
 `is_true` | `asserts.is_true(True)` | asserts that the the condition passed in evaluates to true
 `is_false` | `asserts.is_false(False)` | asserts that the condition passed in evaluates to false
 `are_equal` | `asserts.are_equal(2, 2)` | asserts that the two values are equal (using ==)
