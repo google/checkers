@@ -48,13 +48,14 @@ def test_test_clone():
 @checkers.test
 def test_test_call_not_implemented():
   t = Test('foo', 'bar.foo', 'foo bar test')
-  asserts.is_raised(NotImplementedError, t)
-
+  with asserts.expected_exception(NotImplementedError):
+    t()
 
 @checkers.test
 def test_test_required_variables_not_implemented():
   t = Test('foo', 'bar.foo', 'foo bar test')
-  asserts.is_raised(NotImplementedError, lambda: t.required_variables)
+  with asserts.expected_exception(NotImplementedError):
+    t.required_variables()
 
 
 # TODO(barkimedes): Add tests for generate_test_cases, but for now it's

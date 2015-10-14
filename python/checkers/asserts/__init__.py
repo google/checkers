@@ -19,28 +19,32 @@ assert engine you like to make assertions within tests. For example, PyHamcrest
 (https://pypi.python.org/pypi/PyHamcrest) is a popular option.
 """
 
+import contextlib
 
-def is_raised(exception_type, call, *args, **kwargs):
+
+@contextlib.contextmanager
+def expected_exception(exception_type):
   """Asserts that an exception of a given type is actually raised.
+  
+  This is a context-managed assert, so use within a with statement.
+  Example:
+    with asserts.expected_exception('ZeroDivisionError'):
+      2 / 0
 
   Args:
     exception_type: (type) The type of the expected exception.
-    call: (callable) The callable item that should raise the exception.
-    *args: (tuple) Positional args to pass through to the callable.
-    **kwargs: (dict) Keyword args to pass through to the callable.
 
   Raises:
     AssertionError: The expected exception isn't raised.
   """
   message = 'expected exception %s to be raised...it wasn\'t' % exception_type
   try:
-    call(*args, **kwargs)
-  except exception_type as ex:
-    return  # The correct exception was raised
+    yield
+  except exception_type:
+    return  # Nothing to do; correct exception was raised.
   except Exception as ex:
     message += '; unexpected exception: <%s>' % ex
   raise AssertionError(message)
-
 
 def is_true(condition, message=None):
   """Asserts that the given condition is true (or at least truthy)."""

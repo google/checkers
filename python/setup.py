@@ -32,8 +32,8 @@ setup(
         'checkers',
         'checkers.asserts',
         'checkers.examples',
+        'checkers.runners',
         'checkers.runners.pyunit',
         'checkers.tests',
     ],
 )
-
