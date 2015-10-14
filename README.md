@@ -48,7 +48,9 @@ def test_add_4_8_12():
 
 @checkers.test
 def test_divide_2_0_error():
-  asserts.is_raised(ZeroDivisionError, lambda: 2 / 0)
+  with asserts.expect_exception(ZeroDivisionError):
+    2 / 0
+
 
 if __name__ == '__main__':
   pyunit.main()
@@ -327,7 +329,8 @@ def zero_division_setup():
 @checkers.setup(celebrate_evenness, zero_division_setup)
 @checkers.test
 def test_divide_2_0():
-  asserts.is_raised(ZeroDivisionError, lambda: 2 / 0)
+  with assexpect_exceptioncted_exception(ZeroDivisionError):
+    2 / 0
 
 @checkers.teardown(curse_oddness)
 @checkers.test
@@ -497,7 +500,7 @@ built-in asserters in the `checkers.asserts` module.
 
 Assert | Example | Description
 -------|---------|------------
-`is_raised` | `asserts.is_raised(ZeroDivisionError, calculator.divide, 2, 0)` | asserts that the expected exception is raised
+`expect_exception` | `with asserts.expect_exception(ZeroDivisionError): 2 / 0` | asserts that the expected exception is raised
 `is_true` | `asserts.is_true(True)` | asserts that the the condition passed in evaluates to true
 `is_false` | `asserts.is_false(False)` | asserts that the condition passed in evaluates to false
 `are_equal` | `asserts.are_equal(2, 2)` | asserts that the two values are equal (using ==)

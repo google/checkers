@@ -48,13 +48,13 @@ def test_test_clone():
 @checkers.test
 def test_test_call_not_implemented():
   t = Test('foo', 'bar.foo', 'foo bar test')
-  with asserts.expected_exception(NotImplementedError):
+  with asserts.expect_exception(NotImplementedError):
     t()
 
 @checkers.test
 def test_test_required_variables_not_implemented():
   t = Test('foo', 'bar.foo', 'foo bar test')
-  with asserts.expected_exception(NotImplementedError):
+  with asserts.expect_exception(NotImplementedError):
     t.required_variables()
 
 

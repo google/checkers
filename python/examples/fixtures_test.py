@@ -62,7 +62,7 @@ def zero_division_setup():
 @checkers.setup(celebrate_evenness, zero_division_setup)
 @checkers.test
 def test_divide_2_0():
-  with asserts.expected_exception(ZeroDivisionError):
+  with assexpect_exceptioncted_exception(ZeroDivisionError):
     2 / 0
 
 @checkers.teardown(curse_oddness)

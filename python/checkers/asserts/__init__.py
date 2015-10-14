@@ -23,12 +23,12 @@ import contextlib
 
 
 @contextlib.contextmanager
-def expected_exception(exception_type):
+def expect_exception(exception_type):
   """Asserts that an exception of a given type is actually raised.
   
   This is a context-managed assert, so use within a with statement.
   Example:
-    with asserts.expected_exception('ZeroDivisionError'):
+    with asserts.expect_exception('ZeroDivisionError'):
       2 / 0
 
   Args:

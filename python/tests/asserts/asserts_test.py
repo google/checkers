@@ -81,7 +81,7 @@ def test_is_true_ok(value):
 @checkers.parameterize(FALSEY_VALUES)
 @checkers.test
 def test_is_true_fail(value):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_true(value)
 
 
@@ -94,7 +94,7 @@ def test_is_false_ok(value):
 @checkers.parameterize(TRUTHY_VALUES)
 @checkers.test
 def test_is_false_fail(value):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_false(value)
 
 
@@ -107,7 +107,7 @@ def test_assert_equal_ok(x, y):
 @checkers.parameterize(UNEQUAL_VALUES)
 @checkers.test
 def test_assert_equal_bad(x, y):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.are_equal(x, y)
 
 
@@ -120,7 +120,7 @@ def test_assert_not_equal_ok(x, y):
 @checkers.parameterize(EQUAL_VALUES)
 @checkers.test
 def test_assert_not_equal_bad(x, y):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.are_not_equal(x, y)
 
 
@@ -133,7 +133,7 @@ def test_assert_in_ok(item, collection):
 @checkers.parameterize(MISSING_VALUES)
 @checkers.test
 def test_assert_in_bad(item, collection):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_in(item, collection)
 
 
@@ -146,7 +146,7 @@ def test_assert_not_in_ok(item, collection):
 @checkers.parameterize(CONTAINS_VALUES)
 @checkers.test
 def test_assert_not_in_bad(item, collection):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_not_in(item, collection)
 
 
@@ -159,7 +159,7 @@ def test_assert_empty_ok(collection):
 @checkers.parameterize(NONEMPTY_VALUES)
 @checkers.test
 def test_assert_empty_bad(collection):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_empty(collection)
 
 
@@ -172,7 +172,7 @@ def test_assert_not_empty_ok(collection):
 @checkers.parameterize(EMPTY_VALUES)
 @checkers.test
 def test_assert_not_empty_bad(collection):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_not_empty(collection)
 
 
@@ -183,7 +183,7 @@ def test_assert_none_ok():
 
 @checkers.test
 def test_assert_none_bad():
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_none(0)
 
 
@@ -194,7 +194,7 @@ def test_assert_not_none_ok():
 
 @checkers.test
 def test_assert_not_none_bad():
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.is_not_none(None)
 
 
@@ -207,7 +207,7 @@ def test_assert_same_ok(value):
 @checkers.parameterize(DIFFERENT_INSTANCE_VALUES)
 @checkers.test
 def test_assert_same_bad(x, y):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.are_same(x, y)
 
 
@@ -220,7 +220,7 @@ def test_assert_not_same_ok(x, y):
 @checkers.parameterize(TRUTHY_VALUES)
 @checkers.test
 def test_assert_not_same_bad(value):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.are_not_same(value, value)
 
 
@@ -234,7 +234,7 @@ def test_assert_length_ok(collection, length):
 @checkers.parameterize(EMPTY_VALUES)
 @checkers.test
 def test_assert_length_bad(collection):
-  with asserts.expected_exception(AssertionError):
+  with asserts.expect_exception(AssertionError):
     asserts.has_length(collection, 1)
 
 
