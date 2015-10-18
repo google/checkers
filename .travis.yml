@@ -5,7 +5,6 @@ python:
 
 install:
  - python setup.py install --user
- - pip install pycheckers
 
 script:
  - bash run_all_tests.sh
