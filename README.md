@@ -1,5 +1,7 @@
 # Checkers Test Framework
 
+[![Build Status](https://api.travis-ci.org/google/checkers.png)](https://api.travis-ci.org/google/checkers)
+
 Checkers is a flexible test authoring framework for Python.
 
 You may find Checkers useful if you want to do any of the following:
@@ -14,6 +16,7 @@ parts: test steps, test data, components under test, and test metadata. Checkers
 allows the user to have control over all of these areas, so it is easy to
 customize behavior. However, default behaviors are implemented so that writing
 simple tests is still super simple.
+
 
 ## Requirements
 
