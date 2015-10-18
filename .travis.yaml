@@ -1,5 +1,10 @@
 language: python
+
 python:
   - "2.7"
-install: "setup.py install --user"
-script: "bash run_all_tests.sh"
+
+install:
+ - python setup.py -q install --user
+
+script:
+ - bash run_all_tests.sh
