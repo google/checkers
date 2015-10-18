@@ -4,7 +4,8 @@ python:
   - "2.7"
 
 install:
- - python setup.py -q install --user
+ - python setup.py install --user
+ - pip install pycheckers
 
 script:
  - bash run_all_tests.sh
