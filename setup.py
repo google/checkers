@@ -18,7 +18,7 @@ from distutils.core import setup
 
 setup(
     name='pycheckers',
-    version='1.0',
+    version='0.1017',
     description='Functional, dependency-injected test framework for Python.',
     maintainer='Sabrina Williams',
     author='Sabrina Williams',
