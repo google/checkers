@@ -25,7 +25,7 @@ TODO(barkimedes): Describe installation in more detail. This is just a general
 recommendation for people who already know how to download code from GitHub.
 
 * Download (or clone) the google/checkers repository.
-* From the python folder, run `python setup.py build -b /path/to/build/dir install`
+* From the python folder, run `python setup.py install`
 * ...
 * ~~Profit!!~~ Test!!
 

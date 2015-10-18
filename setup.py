@@ -20,13 +20,15 @@ setup(
     name='pycheckers',
     version='1.0',
     description='Functional, dependency-injected test framework for Python.',
-    maintainer='Google',
+    maintainer='Sabrina Williams',
     author='Sabrina Williams',
-    # maintainer_email='checkers google group or something',
-    # url='github url',
+    
+    maintainer_email='checkers-team@googlegroups.com',
+    url='https://github.com/google/checkers',
     package_dir={
-        'checkers.examples': 'examples',
-        'checkers.tests': 'tests',
+        'checkers': 'python/checkers',
+        'checkers.examples': 'python/examples',
+        'checkers.tests': 'python/tests',
     },
     packages=[
         'checkers',
