@@ -1,6 +1,6 @@
 # Checkers Test Framework
 
-[![Build Status](https://api.travis-ci.org/google/checkers.png)](https://travis-ci.org/google/checkers)
+<!--- [![Build Status](https://api.travis-ci.org/google/checkers.png)](https://travis-ci.org/google/checkers) --->
 
 Checkers is a flexible test authoring framework for Python.
 
