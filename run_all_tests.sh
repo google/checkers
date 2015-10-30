@@ -12,7 +12,7 @@
 #     See the License for the specific language governing permissions and
 #     limitations under the License.
 
-python setup.py install --user
+export PYTHONPATH=$PWD/python:$PYTHONPATH
 
 echo 'python/tests/checkers_test.py'
 python python/tests/checkers_test.py
