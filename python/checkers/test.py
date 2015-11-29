@@ -86,9 +86,9 @@ class Test(object):
       return test_cases
     # It is a parameterized test, so we need to generate multiple test cases;
     # one for each parameterization.
-    for name, param in parameterizations.iteritems():
-      name = '%s_%s' % (self.name, name)
-      full_name = '%s_%s' % (self.full_name, name)
+    for suffix, param in parameterizations.iteritems():
+      name = '%s_%s' % (self.name, suffix)
+      full_name = '%s_%s' % (self.full_name, suffix)
       test_case = TestCase(self, context_factory, name=name,
                            full_name=full_name, description=self.description)
       for key, value in param.variables.iteritems():
