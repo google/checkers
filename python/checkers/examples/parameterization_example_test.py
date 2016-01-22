@@ -16,9 +16,8 @@
 
 import checkers
 from checkers import asserts
+from checkers.examples.calculator import Calculator
 from checkers.runners import pyunit
-
-from examples.calculator import Calculator
 
 
 # In this example, the parameterization is applied directly to the test method.

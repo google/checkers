@@ -16,9 +16,8 @@
 
 import checkers
 from checkers import asserts
+from checkers.examples import subtraction_tests
 from checkers.runners import pyunit
-
-from examples import subtraction_tests
 
 
 @checkers.test_suites('addition', 'multiplication')

@@ -18,15 +18,13 @@ from distutils.core import setup
 
 setup(
     name='pycheckers',
-    version='1.160118',
+    version='201601220',
     description='Functional, dependency-injected test framework for Python.',
     maintainer='Sabrina Williams',
     maintainer_email='checkers-team@googlegroups.com',
     url='https://github.com/google/checkers',
     package_dir={
-        'checkers': 'python/checkers',
-        'checkers.examples': 'python/examples',
-        'checkers.tests': 'python/tests',
+        'checkers': 'checkers',
     },
     packages=[
         'checkers',

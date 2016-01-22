@@ -16,9 +16,8 @@
 
 import checkers
 from checkers import asserts
+from checkers.examples.calculator import Calculator
 from checkers.runners import pyunit
-
-from examples.calculator import Calculator
 
 
 def logging_test_run_setup(test_run):
@@ -62,7 +61,7 @@ def zero_division_setup():
 @checkers.setup(celebrate_evenness, zero_division_setup)
 @checkers.test
 def test_divide_2_0():
-  with assexpect_exceptioncted_exception(ZeroDivisionError):
+  with asserts.expect_exception(ZeroDivisionError):
     2 / 0
 
 @checkers.teardown(curse_oddness)
