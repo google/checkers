@@ -4,4 +4,4 @@ python:
   - "2.7"
 
 script:
- - bash run_all_tests.sh
+ - bash python/run_all_tests.sh
