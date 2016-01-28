@@ -14,36 +14,36 @@
 
 export PYTHONPATH=$PWD/python:$PYTHONPATH
 
-echo 'checkers/tests/checkers_test.py'
-python checkers/tests/checkers_test.py
+echo 'python/checkers/tests/checkers_test.py'
+python python/checkers/tests/checkers_test.py
 
-echo 'checkers/tests/context_test.py'
-python checkers/tests/context_test.py
+echo 'python/checkers/tests/context_test.py'
+python python/checkers/tests/context_test.py
 
-echo 'checkers/tests/modules_test.py'
-python checkers/tests/modules_test.py
+echo 'python/checkers/tests/modules_test.py'
+python python/checkers/tests/modules_test.py
 
-echo 'checkers/tests/parameterization_test.py'
-python checkers/tests/parameterization_test.py
+echo 'python/checkers/tests/parameterization_test.py'
+python python/checkers/tests/parameterization_test.py
 
-echo 'checkers/tests/registry_test.py'
-python checkers/tests/registry_test.py
+echo 'python/checkers/tests/registry_test.py'
+python python/checkers/tests/registry_test.py
 
-echo 'checkers/tests/test_case_test.py'
-python checkers/tests/test_case_test.py
+echo 'python/checkers/tests/test_case_test.py'
+python python/checkers/tests/test_case_test.py
 
-echo 'checkers/tests/test_result_test.py'
-python checkers/tests/test_result_test.py
+echo 'python/checkers/tests/test_result_test.py'
+python python/checkers/tests/test_result_test.py
 
-echo 'checkers/tests/test_run_test.py'
-python checkers/tests/test_run_test.py
+echo 'python/checkers/tests/test_run_test.py'
+python python/checkers/tests/test_run_test.py
 
-echo 'checkers/tests/test_suite_test.py'
-python checkers/tests/test_suite_test.py
+echo 'python/checkers/tests/test_suite_test.py'
+python python/checkers/tests/test_suite_test.py
 
-echo 'checkers/tests/test_test.py'
-python checkers/tests/test_test.py
+echo 'python/checkers/tests/test_test.py'
+python python/checkers/tests/test_test.py
 
-echo 'checkers/tests/asserts/asserts_test.py'
-python checkers/tests/asserts/asserts_test.py
+echo 'python/checkers/tests/asserts/asserts_test.py'
+python python/checkers/tests/asserts/asserts_test.py
 
